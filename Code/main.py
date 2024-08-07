@@ -1,11 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Jul 18 15:05:58 2024
-
-@author: elizahe
-"""
-
 import numpy as np
 import torch
 from load_data import load_data2
