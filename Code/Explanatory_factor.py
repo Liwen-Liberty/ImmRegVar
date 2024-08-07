@@ -40,11 +40,9 @@ def explanatory_factor(config):
             actuals.extend(y_train[batch:batch + config.batch_size].cpu().numpy())
             adj_train.extend(_.cpu().numpy().tolist())
     
-    x_train = torch.from_numpy(np.array(adj_train[:])).to(torch.long).to(config.device)
     
-    # Initialize matrices for storing predictions and R^2 scores
+    # Initialize matrices for storing predictions
     predictions_hat_matrix = []
-    r2_hat = []
     
     # Set model to evaluation mode
     model.eval()
