@@ -60,3 +60,52 @@ python ./main.py
 | --- | --- |
 | **model_state_dict.pt** | ImmRegVar model. |
 | **attention_weights.npy** | attention weights matrix in ImmRegVar. |
+
+
+## 2. Comparison of model explanatory factors and its robustness
+
+See Python Code
+
+
+Visualization of results:
+<div align="center">
+  <img src="https://github.com/Liwen-Liberty/ImmregInformer/blob/main/Figures/Figure2.png" alt="Editor" width="500">
+</div>
+
+
+
+## 3. Important features selected based on explanatory factors
+
+See Rscripts
+
+Visualization of results:
+
+<div align="center">
+  <img src="https://github.com/Liwen-Liberty/ImmregInformer/blob/main/Figures/Figure3.png" alt="Editor" width="500">
+</div>
+
+
+===========================================================================
+
+
+
+
+
+# Contributing
+
+yi He, liwen Xu, shaoliang Peng*
+
+# Cite
+<p align="center">
+  <a href="https://clustrmaps.com/site/1bpq2">
+     <img width="200"  src="https://clustrmaps.com/map_v2.png?cl=ffffff&w=268&t=m&d=4hIDPHzBcvyZcFn8iDMpEM-PyYTzzqGtngzRP7_HkNs" />
+   </a>
+</p>
+
+
+# Contacts
+If you have any questions or comments, please feel free to email: hyeliza4394@gmail.com.
+
+# License
+
+[MIT ? Richard McRichface.](../LICENSE)
