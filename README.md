@@ -11,3 +11,52 @@ Tumor immunotherapy, particularly immune checkpoint inhibitors (ICI), has achiev
 ![Image text](https://github.com/Liwen-Liberty/ImmRegVar/blob/main/Figures/Figure1.png)
 
 To identify and quantify the impact of genomic alterations on CD8 T-cell infiltration in the tumor microenvironment, we designed a neural network model based on the Transformer architecture. This model is intended to handle high-dimensional sparse genomic data and predict the effects of genomic alterations.First, we utilized a dataset containing gene identifiers and their corresponding mutation scores. Each gene is represented by a discrete identifier, while the mutation score indicates the extent of variation for each gene. Within this dataset, we integrated data on Single Nucleotide Variants (SNV) and Copy Number Variations (CNV).Then we built a neural network model based on the Transformer architecture.To enhance our understanding of genetic mutation data and improve the interpretability of model predictions, we have introduced a feature ablation method. In our research, each gene exists in two states: zero, indicating no mutation, and non-zero values representing various mutation scenarios. Due to the significantly higher frequency of non-mutation states compared to mutations, our data matrix forms a high-dimensional sparse matrix. In this context, the feature ablation method allows us to systematically assess the influence of each genetic feature on Transformer model predictions.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Quick start](#quick-start)
+- [Contributing](#contributing)
+- [Cite](#cite)
+- [Contacts](#contacts)
+- [License](#license)
+
+
+## Installation
+
+ImmRegVar is tested to work under the:
+
+```
+* Python 3.11.5
+* Torch 2.3.1
+* R 4.2.2
+* Numpy 1.24.3
+* Other basic Python and r toolkits
+```
+### Installation of other dependencies
+* Install [R package glmnetcr](https://github.com/cran/glmnetcr) using ` devtools::install_github("cran/glmnetcr") ` in the R environment if you encounter any issue.
+
+
+# Quick start
+To reproduce our results:
+
+
+## 1. Application and verification
+```
+python ./main.py
+```
+
+**Arguments**:
+
+| **Arguments** | **Detail** |
+| --- | --- |
+| **Solid_tumor_mutation_status_mat.csv** | Mutation status profile of 7972 solid tumor samples with matched expression data. |
+| **Solid_tumor_CD8T_score_df.csv** | Cytolytic activity score of 7972 solid tumor samples. |
+
+
+**Values**:
+
+| **Output** | **Detail** |
+| --- | --- |
+| **model_state_dict.pt** | ImmRegVar model. |
+| **attention_weights.npy** | attention weights matrix in ImmRegVar. |
