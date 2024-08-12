@@ -69,7 +69,7 @@ See Python Code
 
 Visualization of results:
 <div align="center">
-  <img src="https://github.com/Liwen-Liberty/ImmregInformer/blob/main/Figures/Figure2.png" alt="Editor" width="500">
+  <img src="https://github.com/Liwen-Liberty/ImmRegVar/blob/main/Figures/Figure2.png" alt="Editor" width="500">
 </div>
 
 
@@ -81,7 +81,7 @@ See Rscripts
 Visualization of results:
 
 <div align="center">
-  <img src="https://github.com/Liwen-Liberty/ImmregInformer/blob/main/Figures/Figure3.png" alt="Editor" width="500">
+  <img src="https://github.com/Liwen-Liberty/ImmRegVar/blob/main/Figures/Figure3.png" alt="Editor" width="500">
 </div>
 
 
